@@ -8,7 +8,7 @@
  */
 
 :root {
-  --primary: #6C55F9;
+  --primary: #be1a1a;
   --accent: #FF3D85;
   --secondary: #645F88;
   --success: #35bb78;
@@ -142,7 +142,7 @@ a.bg-dark:hover, a.bg-dark:focus {
 }
 
 .text-primary {
-  color: #6C55F9 !important;
+  color: var(--primary) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -439,7 +439,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #6C55F9;
+  background-color:var(--primary);
   border-color: transparent;
 }
 
@@ -1052,6 +1052,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar {
   min-height: 70px;
   z-index: 1000;
+  box-shadow: 2px 2px 2px 2px var(--primary-color);
 }
 
 .navbar-float {
@@ -1092,11 +1093,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-brand {
-  font-weight: 600;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+.logo-style{
+  width: 250px;
+  height: 48px;
+}
 .navbar-nav {
   margin-top: 10px;
   border-top: 1px solid #e4e7ee;
@@ -1124,7 +1128,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: 500;
-  color: #6C55F9;
+  color: var(--primary);
 }
 
 
@@ -1490,7 +1494,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .title-section .marked {
   position: relative;
-  color: #6C55F9;
+  color: var(--primary);
 }
 
 .title-section .marked::before {
